@@ -1,0 +1,43 @@
+body
+{
+	background-color: aliceblue;
+
+}
+
+h1
+{
+	text-align: center;
+}
+
+h3
+{
+	background-color: yellowgreen;
+	color: purple;
+	font-family: Verdana;
+	border: 2px solid gold;
+}
+
+p
+{
+	font-size: 28px;
+	color: darkred;
+}
+
+table, th, td, tr
+{
+	border: 3px solid indianred;
+	border-collapse: collapse;
+
+}
+th
+{
+	background-color: yellow;
+}
+ td
+ {
+ 	text-align: center;
+ }
+ tr:hover
+ {
+ 	background-color: lightsalmon;
+ }

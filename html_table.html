@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+
+
+	<style>
+		table, tr, th, td
+		{
+			border: 2px solid red;
+			border-collapse: collapse;
+		}
+		th, td
+		{
+			padding: 45px;
+		}
+		th
+		{
+			background-color: blue;
+			color: yellow;
+
+		}
+		tr:nth-child(odd)
+		{
+			background-color: yellowgreen;
+		}
+		tr:nth-child(even)
+		{
+			background-color: lightskyblue;
+		}
+		td
+		{
+			text-align: center;
+		}
+		td:hover
+		{
+			background-color: grey;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<h1>Basic Table</h1>
+
+	<table style="width:100%">
+		<caption>Table 1: Basic HTML Table</caption>
+		<tr>
+			<th style="width:20%">Name</th>
+			<th style="width:15%">Student Id</th>
+			<th style="width:45%">Picture</th>
+			<th style="width:10%">Phone Number</th>
+
+
+		</tr>
+
+		<tr>
+			<td>Tuan Aminuddin Tuan Azemin</td>
+			<td>2022849034</td>
+			<td><img src="images/food2.jfif" style="height: 100px;"></td>
+			<td>0179725193</td>
+
+
+		</tr>
+
+		<tr style="height:250px">
+			<td>Tuan Aminuddin Tuan Azemin</td>
+			<td>2022849034</td>
+			<td><img src="images/burger.avif" style="height: 100px;"></td>
+			<td>0179725193</td>
+
+
+		</tr>
+
+		<tr>
+			<td>Tuan Aminuddin Tuan Azemin</td>
+			<td>2022849034</td>
+			<td><img src="images/food2.jfif" style="height: 100px;"></td>
+			<td>0179725193</td>
+
+
+		</tr>
+
+
+	<table>
+
+	<h1>Colspan</h1>
+
+	<table style="width: 100%">
+
+		<tr>
+			<th>Name</th>
+			<th>Student ID</th>
+			<th colspan="3">Subject</th>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<h1>Rowspam</h1>
+
+	<table style="width:70%">
+		<tr>
+			<th>Name</th>
+			<td>Amin</td>
+		</tr>
+
+		<tr>
+			<th rowspan="2">Email</th>
+			<td>aminuddintuan@gmail.com</td>
+		</tr>
+
+		<tr>
+			<td>tuanamin@gmailcom</td>
+			
+		</tr>
+		<tr>
+			<th>Alamat</th>
+			<td rowspan="2">Kelantan</td>
+
+		</tr>
+		<tr>
+			<th>Alamat Surat</th>
+		</tr>
+
+		
+	</table>
+
+
+
+
+</body>
+</html>

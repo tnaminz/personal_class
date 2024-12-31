@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+	<iframe src="https://free.timeanddate.com/clock/i9ojaqkv/n122" frameborder="0" width="113" height="19"></iframe>
+
+
+	<h2>Javascript change content</h2>
+
+	<p id="content1">Ia am using javascript to change the content</p>
+	<button type="button" onclick='document.getElementById("content1").innerHTML="This is the second content, changed using Javasripts"'>Click Me</button>
+
+	<h2>Javasript change style</h2>
+
+	<p id="style1">This content is using Javasript to change the style</p>
+
+	<script>
+        function myStyle()
+        {
+        	document.getElementById("style1").style.fontSize = "28px";
+        	document.getElementById("style1").style.fontFamily = "Papyrus";
+        	document.getElementById("style1").style.color = "blue";
+        	document.getElementById("style1").style.backgroundColor = "yellow";
+        }
+	</script>
+
+	<button type="button" onclick="myStyle()">Change Style</button>
+
+	<h2>Javascript manipulate image/attributes</h2>
+    
+
+    <script>
+    	function myPicture(a)
+    	{
+    		var pic;
+    		if (a==0)
+    		{
+    			pic="images/smiley.jpg"
+    		}
+    		else
+    		{
+    			pic="images/smiley2.avif"
+    		}
+    		document.getElementById('gambar').src=pic;
+    	}
+    </script>
+
+	<img src="images/smiley.jpg" id="gambar" width="100" height="100">
+
+	<p>
+		<button type="button" onclick="myPicture(0)">Smile</button>
+		<button type="button" onclick="myPicture(1)">Happy</button>
+	</p>
+
+	<h2>Alert Box</h2>
+
+	<button type="button" onclick="AlerBox()">Click Here</button>
+	<script>
+		function AlertBox()
+		{
+			alert("Assalamualaikum, \nWelcome to my page")
+		}
+	</script>
+
+	<script>
+
+		{
+			alert("Assalamualaikum, \nWelcome to my page")
+		}
+	</script>
+
+
+</body>
+</html>
